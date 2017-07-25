@@ -15,6 +15,11 @@
 		146F5F9C1E76C10F000F0847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146F5F9A1E76C10F000F0847 /* Main.storyboard */; };
 		146F5F9E1E76C10F000F0847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146F5F9D1E76C10F000F0847 /* Assets.xcassets */; };
 		146F5FA11E76C10F000F0847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146F5F9F1E76C10F000F0847 /* LaunchScreen.storyboard */; };
+		DE3968631E76E55A002AC905 /* SunnyDayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3968621E76E55A002AC905 /* SunnyDayScene.swift */; };
+		DE3968651E76E848002AC905 /* CatEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3968641E76E848002AC905 /* CatEntity.swift */; };
+		DE3968681E76E931002AC905 /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3968671E76E931002AC905 /* SpriteComponent.swift */; };
+		DE39686B1E76ED4C002AC905 /* HungerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39686A1E76ED4C002AC905 /* HungerComponent.swift */; };
+		DE39686D1E76EFA2002AC905 /* FishEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE39686C1E76EFA2002AC905 /* FishEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		146F5F9D1E76C10F000F0847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		146F5FA01E76C10F000F0847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		146F5FA21E76C10F000F0847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE3968621E76E55A002AC905 /* SunnyDayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunnyDayScene.swift; sourceTree = "<group>"; };
+		DE3968641E76E848002AC905 /* CatEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatEntity.swift; path = Entities/CatEntity.swift; sourceTree = "<group>"; };
+		DE3968671E76E931002AC905 /* SpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteComponent.swift; path = Components/SpriteComponent.swift; sourceTree = "<group>"; };
+		DE39686A1E76ED4C002AC905 /* HungerComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HungerComponent.swift; path = Components/HungerComponent.swift; sourceTree = "<group>"; };
+		DE39686C1E76EFA2002AC905 /* FishEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FishEntity.swift; path = Entities/FishEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				146F5F981E76C10F000F0847 /* GameViewController.swift */,
+				DE3968621E76E55A002AC905 /* SunnyDayScene.swift */,
+				DE3968691E76EA85002AC905 /* Components */,
+				DE3968661E76E84D002AC905 /* Entities */,
 				146F5FA81E76C179000F0847 /* Supporting Files */,
 			);
 			path = "AC3.2-GamePlayKitIntro";
@@ -79,6 +92,24 @@
 				146F5FA21E76C10F000F0847 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE3968661E76E84D002AC905 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DE3968641E76E848002AC905 /* CatEntity.swift */,
+				DE39686C1E76EFA2002AC905 /* FishEntity.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		DE3968691E76EA85002AC905 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE3968671E76E931002AC905 /* SpriteComponent.swift */,
+				DE39686A1E76ED4C002AC905 /* HungerComponent.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				146F5F971E76C10E000F0847 /* GameScene.swift in Sources */,
+				DE39686B1E76ED4C002AC905 /* HungerComponent.swift in Sources */,
+				DE39686D1E76EFA2002AC905 /* FishEntity.swift in Sources */,
+				DE3968651E76E848002AC905 /* CatEntity.swift in Sources */,
 				146F5F991E76C10F000F0847 /* GameViewController.swift in Sources */,
 				146F5F911E76C10E000F0847 /* AppDelegate.swift in Sources */,
+				DE3968681E76E931002AC905 /* SpriteComponent.swift in Sources */,
+				DE3968631E76E55A002AC905 /* SunnyDayScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
